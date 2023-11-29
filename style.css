@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.head {
+    color:  hsl(234, 12%, 34%);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 200;
+    margin-left: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight:600;
+    color: hsl(234, 12%, 34%);
+}
+.word {
+    font-size: 0.7rem;
+    margin-top: 12px;
+    font-weight: 600;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+    margin-left: 0;
+}
+.second_word {
+    font-size: 0.7rem;
+    margin-top: none;
+    font-weight: 600;
+    color: hsl(229, 6%, 66%);
+    text-align: center;
+}
+.container {
+    display:grid;
+    height: 550px;
+    width:900px;
+    grid-template-columns: repeat(3, minmax(1fr 300px));
+    grid-template-rows: 137.5px 137.5px 137.5px 137.5px;
+    grid-gap: 10px;
+ }
+ .main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ }
+ .green_card {
+    width:290px;
+    height:190px;
+    background-color:hsl(0, 0%, 98%);
+    border-top: 5px solid hsl(180, 62%, 55%);
+    border-radius: 5px;
+    grid-row: 2 / 3;
+    /* margin-left: 35px; */
+ }
+ h2 {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color:hsl(234, 12%, 34%);
+ }
+ .card_text {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin-left: 25px;
+    margin-top: 8px;
+ }
+ img {
+    width: 50px;
+    float: right;
+    margin-right: 23px;
+    margin-top: 35px;
+ }
+ .red_card {
+    width: 290px;
+    height:190px;
+    background-color: hsl(0, 0%, 98%);
+    border-top: 5px solid  hsl(0, 78%, 62%);
+    grid-column: 2 / 3;
+    border-radius: 5px;
+    margin-top: 40px;
+    /* margin-left: 18px; */
+ }
+ .yellow_card {
+    width: 290px;
+    height: 190px;
+    background-color: hsl(0, 0%, 98%);
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-row: 2 / 3;
+    margin-top: 100px;
+    border-radius: 5px;
+    /* margin-left: 18px; */
+ }
+ .blue_card {
+    width: 290px;
+    height: 190px;
+    background-color: hsl(0, 0%, 98%);
+    border-top: 5px solid hsl(212, 86%, 64%);
+    grid-row: 2 / 3;
+    border-radius: 5px;
+ }
+ @media (max-width:375px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+    .head {
+        font-size: 1rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .word {
+    font-size: 0.8rem;
+    text-align: center;
+    }
+    .second_word {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .green_card {
+        margin-top: 50px;
+    }
+    .red_card {
+        margin-top: 0;
+    }
+    .yellow_card {
+        margin-top: 0;
+    }
+ }
